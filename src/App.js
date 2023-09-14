@@ -1,25 +1,59 @@
+import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
+import './style.css';
+import Nav from './component/Nav.js';
+import NoticePage from './component/NoticePage.js';
+// import Crawler from './Crawler.js';
+// import Product from './component/product.js'
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // <Router>
+      <div>
+        <Nav />
+        <NoticePage />
     </div>
+    //   {/* <div>
+    //     <Routes>
+    //       <Route path="/" element={<NoticePage />}/>
+    //     </Routes>
+    // </div> */}
+    // </Router>
+    
   );
 }
 
 export default App;
+
+
+// import React from 'react';
+// import NoticePage from "./component/NoticePage.js";
+// import './App.css';
+
+// class App extends React.Component {
+//     constructor(props) {
+//         super(props);
+//         this.state = {
+//             noticeList: []
+//         }
+//     }
+
+//     componentDidMount() {
+//         this.callAPI()
+//     }    
+//     callAPI = async () => {  
+//         const response = await (await fetch('http://localhost:3000/noticeBoard')).json()  
+//         this.setState({ noticeList: response });  
+//         console.log("hi");      
+//     }
+//     render() {
+//         return (
+//             <div className="App" >     
+//                 <NoticePage noticeArr={this.state.noticeList} />
+//             </div>
+//         );
+//     }
+// }
+// export default App;
