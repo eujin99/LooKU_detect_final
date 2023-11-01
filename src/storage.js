@@ -11,7 +11,17 @@ import K9 from './image/K9.jpg';
 import K10 from './image/K10.jpg';
 
 const storage = {
+    keywordData: [
+        { id: 1, keyword: "학생회관" },
+        { id: 2, keyword: "도서관" },
+        { id: 3, keyword: "교양강의동" },
+        { id: 4, keyword: "행정관" },
+        { id: 5, keyword: "자연과학관" },
+    ],
 
+    historyData: [
+
+    ],
     productData: [
         {
             id: 1,
@@ -20,7 +30,7 @@ const storage = {
             description: "학생생활의 중심으로 각종 동아리방 및 은행, 우체국 등의 편의시설과 학생식당 등이 위치한 건물로 학생생활 전반에 걸친 모든 일들이 여기서 이루어 집니다.",
             imageUrl:K1,
             tel:"043-840-3224",
-            infra:["흡연구역","주차장","복사기","자판기","AED","분식집","서점","카페"],
+            infra:["흡연구역","주차장","복사기","자판기","AED","분식집","서점","카페","은행","우체국","안경원"],
             minLatitude: 36.950628,
             maxLatitude: 36.951577,
             minLongitude: 127.906303,
@@ -65,7 +75,7 @@ const storage = {
             description:"모시래학사는 1,502여명의 관생들이 남동과 여동으로 구분된 총 4개 동의 학사에서 쾌적한 학교생활을 할 수 있도록 자율에 근거한 생활규범을 익히며 학습하는 우리 대학기숙사입니다. ",
             imageUrl:K4,
             tel:"043-840-3783",
-            infra:["흡연구역","주차장","복사기","자판기","AED","편의점"],
+            infra:["흡연구역","주차장","복사기","자판기","AED","편의점","ATM"],
             minLatitude: 36.950084,
             maxLatitude: 36.951445,
             minLongitude: 127.908483,
@@ -80,7 +90,7 @@ const storage = {
             description:"모시래학사는 1,502여명의 관생들이 남동과 여동으로 구분된 총 4개 동의 학사에서 쾌적한 학교생활을 할 수 있도록 자율에 근거한 생활규범을 익히며 학습하는 우리 대학기숙사입니다. ",
             imageUrl:K5,
             tel:"043-840-3782",
-            infra:["주차장","헬스장","자판기","AED","카페"],
+            infra:["주차장","헬스장","자판기","AED","카페","ATM","편의점"],
             minLatitude: 36.950084,
             maxLatitude: 36.951445,
             minLongitude: 127.908483,
@@ -115,8 +125,8 @@ const storage = {
             maxLatitude: 36.950203,
             minLongitude: 127.908545,
             maxLongitude: 127.910893,
-            centerLatitude: 36.949483,
-            centerLongitude: 127.909882,
+            centerLatitude: 36.949227,
+            centerLongitude: 127.909656,
         },
         {
             id: 8,

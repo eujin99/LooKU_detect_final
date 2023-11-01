@@ -2,14 +2,12 @@ import React, { useEffect } from 'react';
 import {useLocation} from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { FiChevronLeft } from 'react-icons/fi';
-
-
 import storage from '../storage';
 
 function ResultPage() {
     const location = useLocation();
     const names = location.state.names[0];
-    const confidences = location.state.confidences[0];
+    // const confidences = location.state.confidences[0];
     const navigate = useNavigate();
 
     const result = storage.productData.find((item) => item.number === names);
@@ -36,7 +34,11 @@ function ResultPage() {
   
     // Kakao Maps API 스크립트 로드 완료 후 실행될 콜백 함수
      function mapScriptLoaded() {
-       mapscript();
+      if (window.kakao && window.kakao.maps) {
+        mapscript();
+      } else {
+        console.error('Failed to load Kakao Maps API.');
+      }
      }
   
      function mapscript() {
@@ -60,9 +62,9 @@ function ResultPage() {
         marker.setMap(map);
      }
     
-    if((names != null) && (confidences!=null)){
+    // if((names != null) && (confidences!=null)){
       return (
-        <div className='container'>
+        <div className='resultContainer'>
           <img src={imageUrl} alt ="img" width="100%" className='backgroundImage'/>
           <div className = 'scrollableContainer'>
             <div className='dataContainer'>
@@ -91,13 +93,13 @@ function ResultPage() {
             
         </div>
     );
-    }else {
-      //조건문 변경해야할듯 안돌아감
-      <div>
-        <h2>건물을 다시 촬영해주십시오.</h2>
-        <button onClick={handleBack}>재촬영</button>
-      </div>
-    }
+    // }else {
+    //   //조건문 변경해야할듯 안돌아감
+    //   <div>
+    //     <h2>건물을 다시 촬영해주십시오.</h2>
+    //     <button onClick={handleBack}>재촬영</button>
+    //   </div>
+    // }
   
 }
 

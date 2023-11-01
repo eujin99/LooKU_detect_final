@@ -1,5 +1,133 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Sans+KR:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Montserrat:wght@400;500;600;700;800&display=swap');
+#nav {
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    background-color: white;
+    font-family: 'Noto Sans KR', sans-serif; 
+    box-shadow: 0px -4px 4px #C9C9C9;
+    text-align: center;
+    flex-direction:row;
+    justify-content: space-evenly;
+    display: inline-block;
+  }
+  #nav>ul {
+    float:left;
+    margin: 0px;
+    padding-top: 15px;
+    padding-left:20px;
+  }
+  #nav>ul li {
+    list-style: none;
+    float: left;
+    line-height: 30px;
+  }
+
+  .nav1 {
+    text-decoration-line : none;
+    display:flex;
+    flex-direction: column;
+    vertical-align: bottom;
+  }
+
+.nav1 {
+    text-decoration-line : none;
+    font-size: 12pt;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.navigation-menu{
+    font-family: 'Noto Sans KR', sans-serif; 
+    background-color: white;
+    color:#616161;
+    box-shadow: 2px -3px 10px #616161;
+
+}
+.nav-item{
+    font-size:12pt;
+    font-weight:600;
+    margin-bottom: 20px;
+    color:#616161;
+}
+.mainButton{
+    /* color:white; */
+    font-family: 'Montserrat', sans-serif;
+}
+.one{
+    background-color: #2F5597;
+    color:white;
+    width:96%;
+    height:230px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-shadow: 2px -3px 10px #616161;
+
+}
+.one_sub{
+    margin-right: 8%;
+    text-align: right;
+}
+.two{
+    border-radius: 25px;            
+    background-color: #4C6179;
+    margin: 10px;
+    width:150px;
+    height:150px;
+    color:white;
+    box-shadow: 2px -3px 10px #616161;
+
+}
+.three{
+    border-radius: 25px;            
+    background-color: #EFEFEF;
+    margin: 10px;
+    width:150px;
+    height:150px;
+    color:black;
+    box-shadow: 2px -3px 10px #616161;
+
+}
+.sub{
+    /* border-radius: 10px;
+    background-color: #C9C9C9; */
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    display:flex;
+    overflow-x:auto;
+}
+.searchImg{
+    margin:5px;
+    /* background-color: ; */
+    padding-top:40px;
+    padding-bottom:10px;
+}
+.detectImg{
+    margin:5px;
+    /* background-color: ; */
+    padding-top:30px;
+
+}
+
+
+
+
 .resultViewButton{
     border: 0;
     background-color: #3B7C2D;
@@ -62,7 +190,7 @@
 
 
 
-.container{
+.resultContainer{
     position:relative;
 }
 .backgroundImage{
@@ -198,3 +326,412 @@ html, body{
       right: 20px;
       z-index: 2;
   }
+  .nav{
+    width: 100%;
+    /* display: flex;
+    justify-content: center; */
+    align-items: center;
+    flex-direction: row;
+    /* margin-top: 10px; */
+    background-color: white;
+}
+.LooKU{
+    color:black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;    
+    font-weight: 800;
+    font-size: 30px;
+    /* background-color: red; */
+    margin:10px;
+}
+.logo{
+    margin-left: 25%;
+    margin-right:25%;
+}
+
+.upper{
+    width:100%;
+    height:220px;
+    background-color: #4B4F71;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:600;
+    font-size: 35px;
+}
+
+.noticeTable{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:13pt;
+    text-align:justify;
+    width:100%;
+    margin:0;
+    padding-left:15px;
+    padding-right:15px;
+
+}
+.noticeTr{
+
+    
+}
+.noticeBnum{
+    table-layout: fixed;
+    white-space:nowrap; 
+    font-weight:600;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+}
+.noticeTitle{
+    /* white-space:nowrap;  */
+    overflow:hidden; 
+    text-overflow: ellipsis;
+    font-weight:300;
+    font-family: 'Noto Sans KR', sans-serif;
+    table-layout:auto;
+}
+.noticeDate{
+    white-space:nowrap; 
+    font-weight:400;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    table-layout: fixed;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+table,td,tr{
+    height:50px;
+    justify-content: center;
+}
+
+/* 검색 관련 */
+body,
+.content ul {
+    margin: 0;
+    padding: 0;
+}
+
+.content ul {
+    list-style: none;
+}
+/* 
+img {
+    width: 100%;
+} */
+
+button:focus,
+button:hover {
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.container {
+    margin: 0 15px 0 15px;
+}
+
+header {
+    border-bottom: 1px #ccc solid;
+    padding: 15px 0 15px 0;
+    text-align: center;
+}
+
+.searchTop{
+    border:none;
+}
+.searchMiddle{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 14px;
+    /*line-height: 1.5;*/
+    /*border: 1px solid #cccccc;*/
+    border-radius: 40px;
+    background-color: #F1F2F4;
+    border: none;
+}
+.searchBottom {
+    width: 100%;
+    margin: 15px 0 15px 0;
+    padding: 10px 15px;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    flex-direction: row;
+}
+.magnifyingGlass {
+}
+input[type=text] {
+    font-family: 'Noto Sans KR', sans-serif;
+    /*display: block;*/
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 14px;
+    /*border-radius: 40px;*/
+    background-color: #F1F2F4;
+    border: none;
+    margin-left: 10px;
+    height: 30px;
+}
+
+.content {
+    border: 1px solid #ccc;
+    border:none;
+    width:100%;
+}
+.often{
+    font-family: 'Noto Sans KR', sans-serif;
+    display: block;
+    padding-left: 15px;
+    margin-top: 30px;
+}
+.oftenKeyword{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color:#8D8D8D;
+    background-color: #F6F5F8;
+    border-radius: 40px;
+    width:140%;
+    height:30px;
+    float:left;
+    /*marginRight:10px;*/
+    /*marginLeft:10px;*/
+    text-align: center;
+    padding-top: 5px;
+}
+.keyWordList{
+    width:100%;
+    background-color: red;
+}
+
+ul.tabs {
+    display: flex;
+}
+
+.tabs li {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    /*text-align: center;*/
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    /*background-color: #eee;*/
+    color: #999;
+    font-family:'Noto Sans KR', sans-serif ;
+}
+
+.tabs li.active {
+    color: #8D8D8D;
+    border:none;
+    font-family:'Noto Sans KR', sans-serif ;
+    font-weight: 600;
+}
+
+.tabs li:hover,
+.tabs li:focus {
+    cursor: pointer;
+}
+
+.list li {
+    box-sizing: border-box;
+    display: block;
+    padding: 15px;
+    /* border-bottom: 1px solid #ccc; */
+    position: relative;
+}
+
+.list li:last-child {
+    border-bottom: none;
+}
+
+.list li .number {
+    margin-right: 15px;
+    color: #ccc;
+}
+
+.list li .date {
+    position: absolute;
+    right: 50px;
+    top: 15px;
+    color: #ccc;
+}
+
+.list li .btn-remove {
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    margin-right: 15px;
+}
+
+form {
+    position: relative;
+}
+
+.btn-reset,
+.btn-remove {
+    border-radius: 50%;
+    /*background-color: ;*/
+    color: #818181;
+    border: none;
+    padding: 2px 5px;
+}
+
+.btn-reset {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+.btn-reset::before,
+.btn-remove::before {
+    content: 'X'
+}
+
+.result li {
+    display: flex;
+    margin-bottom: 16px;
+    height: 80px;
+
+}
+
+.result li:last-child {
+    margin-bottom: 0;
+}
+
+.result img {
+    width: 100px;
+    object-fit: cover;
+}
+
+.result p {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.empty-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    color: grey;
+}
+.dataContainer h2{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+}
+.hi{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:14pt;
+    margin:0;
+    color:#4A5056;
+}
+.hiNext{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:40pt;
+    margin: 0;
+    color:#4A5056;
+}
+.infos{
+    margin-left: 12%;
+}
+.welcome{
+    text-align: left;
+    font-family: 'Noto Sans KR', sans-serif; 
+    margin:0;
+    margin-top: 20px;
+}
+.head{
+    text-align: left;
+}
+.subtext{
+    margin:0;
+    padding:0;
+    color:#4A5056;
+    font-weight: 500;
+}
+.underSubtext{
+    font-size: 12pt;
+    margin-top:45px;
+}
+h6{
+    margin:0;
+    padding:0;
+}
+.questionMark{
+    border-radius: 40px;
+    background-color: #EE8160;
+    color:white;
+    width:90px;
+    height:45px;
+    text-align: center;
+    font-weight: 800;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 11pt;
+    border:none;
+    font-family: 'Noto Sans KR', sans-serif; 
+    margin-right: 10px;
+}
+.mainAIbutton{
+    font-size: 11pt;
+    border-radius: 40px;
+    background-color: #353A3F;
+    color:white;
+    height:45px;
+    text-align: center;
+    font-weight: 800;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 0;
+    font-family: 'Noto Sans KR', sans-serif; 
+}
+.mainTwoButton{
+}
+.secondText{
+    text-align: center;
+}
+.buttonWhite{
+    border-radius: 6px;
+    box-shadow: 0px 0px 4px #C9C9C9;
+    font-family: 'Noto Sans KR', sans-serif; 
+    margin-bottom: 30px;
+    color:#495056;
+    width:97%;
+    height:140px;
+    padding-top:60px;
+    text-align:center;
+    font-weight:500;
+    /* vertical-align: middle; */
+}
+.buttonOrange{
+    padding-top:60px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 4px #C9C9C9;
+    font-family: 'Noto Sans KR', sans-serif; 
+    background-color:#EE8160;
+    width:97%;
+    height:140px;
+    text-align:center;
+    margin-bottom: 30px;
+    color:white;
+    font-weight:500;
+ 
+}
+.mainRow{
+    margin-bottom: 20px;
+    font-size: 13pt;
+    margin-left:4%;
+    margin-right:1%;
+    display:flex;
+    flex-direction: column;
+}
+/* .mainRow a:hover { background: deeppink; } */
