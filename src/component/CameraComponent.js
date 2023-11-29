@@ -48,7 +48,7 @@ function CameraComponent() {
     try {
       // API 엔드포인트 URL 설정
       // const apiUrl = 'http://10.20.19.84:8000'; //서버 호스팅 시 주소 바꿀 것
-      const apiUrl = 'http://10.20.19.91:8000'; //행정실
+      const apiUrl = 'http://10.20.7.102:8000'; //행정실
       // const apiUrl = 'http://10.20.7.102:8000'; //K7
 
       // 서버로 전송할 데이터 객체 생성
